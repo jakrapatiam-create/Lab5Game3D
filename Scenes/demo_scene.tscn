@@ -17,17 +17,14 @@ background_mode = 1
 background_color = Color(0.764706, 0.764706, 0.764706, 1)
 ambient_light_source = 2
 ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
-ambient_light_energy = 1.15
 tonemap_mode = 2
 tonemap_exposure = 0.75
 ssr_enabled = true
-ssao_enabled = true
 ssao_radius = 0.45
 ssao_intensity = 1.0
 ssao_power = 15.0
 ssil_enabled = true
 sdfgi_use_occlusion = true
-glow_enabled = true
 glow_intensity = 2.0
 fog_light_color = Color(0.647059, 0.678431, 0.72549, 1)
 volumetric_fog_temporal_reprojection_enabled = false
@@ -103,6 +100,7 @@ environment = SubResource("Environment_g4ka7")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment" unique_id=1567769056]
 transform = Transform3D(-0.898603, 0.438763, 2.98254e-08, 0.146657, 0.300359, 0.942484, 0.413527, 0.846919, -0.334251, 9.04457, 6.63937, -28.4749)
+light_energy = 0.5
 shadow_enabled = true
 
 [node name="Extras" type="Node3D" parent="." unique_id=1678158989]
